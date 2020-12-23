@@ -11,7 +11,7 @@
 		E07816422593475100BE671C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07816412593475100BE671C /* SceneDelegate.swift */; };
 		E07816442593475100BE671C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07816432593475100BE671C /* ViewController.swift */; };
 		E07816472593475100BE671C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07816452593475100BE671C /* Main.storyboard */; };
-		E078164A2593475100BE671C /* CoreDataStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E07816482593475100BE671C /* CoreDataStudy.xcdatamodeld */; };
+		E078164A2593475100BE671C /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E07816482593475100BE671C /* Model.xcdatamodeld */; };
 		E078164C2593475300BE671C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E078164B2593475300BE671C /* Assets.xcassets */; };
 		E078164F2593475300BE671C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E078164D2593475300BE671C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -65,7 +65,7 @@
 				E078164B2593475300BE671C /* Assets.xcassets */,
 				E078164D2593475300BE671C /* LaunchScreen.storyboard */,
 				E07816502593475300BE671C /* Info.plist */,
-				E07816482593475100BE671C /* CoreDataStudy.xcdatamodeld */,
+				E07816482593475100BE671C /* Model.xcdatamodeld */,
 			);
 			path = CoreDataStudy;
 			sourceTree = "<group>";
@@ -142,7 +142,7 @@
 			files = (
 				E07816442593475100BE671C /* ViewController.swift in Sources */,
 				E07816402593475100BE671C /* AppDelegate.swift in Sources */,
-				E078164A2593475100BE671C /* CoreDataStudy.xcdatamodeld in Sources */,
+				E078164A2593475100BE671C /* Model.xcdatamodeld in Sources */,
 				E07816422593475100BE671C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,13 +347,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E07816482593475100BE671C /* CoreDataStudy.xcdatamodeld */ = {
+		E07816482593475100BE671C /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				E07816492593475100BE671C /* CoreDataStudy.xcdatamodel */,
 			);
 			currentVersion = E07816492593475100BE671C /* CoreDataStudy.xcdatamodel */;
-			path = CoreDataStudy.xcdatamodeld;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
