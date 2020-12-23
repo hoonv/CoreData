@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  CoreData
+//  CoreDataStudy
 //
 //  Created by 채훈기 on 2020/12/23.
 //
