@@ -13,7 +13,6 @@ class CoreDataManager {
     public static let shared = CoreDataManager()
     
     lazy var persistentContainer: NSPersistentContainer = {
-
         let container = NSPersistentContainer(name: "Model")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
@@ -26,7 +25,13 @@ class CoreDataManager {
     private init() {
     }
     
-    func saveContext () {
+    lazy var backgroundContext: NSManagedObjectContext = {
+        let moc = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+        moc.persistentStoreCoordinator = persistentContainer.viewContext.persistentStoreCoordinator
+        return moc
+    }()
+    
+    func saveContext() {
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {
