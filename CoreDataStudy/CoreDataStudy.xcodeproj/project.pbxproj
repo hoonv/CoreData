@@ -15,7 +15,9 @@
 		E078164C2593475300BE671C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E078164B2593475300BE671C /* Assets.xcassets */; };
 		E078164F2593475300BE671C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E078164D2593475300BE671C /* LaunchScreen.storyboard */; };
 		E078165925934D7F00BE671C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078165825934D7F00BE671C /* CoreDataManager.swift */; };
-		E078165D259377C800BE671C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078165B259377C800BE671C /* Person.swift */; };
+		E078166B25942F3200BE671C /* JsonPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078166A25942F3200BE671C /* JsonPerson.swift */; };
+		E078166E2594309900BE671C /* PersonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E078166D2594309900BE671C /* PersonDecoder.swift */; };
+		E07816722594379400BE671C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07816702594379400BE671C /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		E078164E2593475300BE671C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E07816502593475300BE671C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E078165825934D7F00BE671C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		E078165B259377C800BE671C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		E078166A25942F3200BE671C /* JsonPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPerson.swift; sourceTree = "<group>"; };
+		E078166D2594309900BE671C /* PersonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDecoder.swift; sourceTree = "<group>"; };
+		E07816702594379400BE671C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Person.swift; path = CoreDataStudy/Model/Person.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				E078165825934D7F00BE671C /* CoreDataManager.swift */,
-				E078165B259377C800BE671C /* Person.swift */,
+				E07816702594379400BE671C /* Person.swift */,
 				E07816482593475100BE671C /* Model.xcdatamodeld */,
+				E078166A25942F3200BE671C /* JsonPerson.swift */,
+				E078166D2594309900BE671C /* PersonDecoder.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E078166B25942F3200BE671C /* JsonPerson.swift in Sources */,
 				E07816442593475100BE671C /* ViewController.swift in Sources */,
 				E07816402593475100BE671C /* AppDelegate.swift in Sources */,
-				E078165D259377C800BE671C /* Person.swift in Sources */,
+				E078166E2594309900BE671C /* PersonDecoder.swift in Sources */,
+				E07816722594379400BE671C /* Person.swift in Sources */,
 				E078164A2593475100BE671C /* Model.xcdatamodeld in Sources */,
 				E078165925934D7F00BE671C /* CoreDataManager.swift in Sources */,
 				E07816422593475100BE671C /* SceneDelegate.swift in Sources */,
